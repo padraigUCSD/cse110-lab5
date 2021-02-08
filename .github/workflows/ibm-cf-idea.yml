@@ -42,12 +42,6 @@ jobs:
         with:
           # IBM Cloud API key
           IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-          
-          
-          ##
-          run: ibmcloud resource groups
-          ##
-          
           # IBM Cloud Foundry API endpoint
           IBM_CLOUD_CF_API: ${{ secrets.IBM_CLOUD_CF_API }}
           # IBM Cloud Foundry organization name
