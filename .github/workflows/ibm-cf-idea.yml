@@ -41,10 +41,13 @@ jobs:
         uses: IBM/cloudfoundry-deploy@v1.0
         with:
           # IBM Cloud API key
-          IBM_CLOUD_API_KEY: 
+          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
           # IBM Cloud Foundry API endpoint
-          IBM_CLOUD_CF_API: 
+          IBM_CLOUD_CF_API: ${{ secrets.IBM_CLOUD_CF_API }}
           # IBM Cloud Foundry organization name
-          IBM_CLOUD_CF_ORG: 
+          IBM_CLOUD_CF_ORG: ${{ secrets.IBM_CLOUD_CF_ORG }}
           # IBM Cloud Foundry space name
-          IBM_CLOUD_CF_SPACE: 
+          IBM_CLOUD_CF_SPACE: ${{ secrets.IBM_CLOUD_CF_SPACE }}
+          # Path of manifest.yml
+          # MANIFEST_FILE_PATH: # default is ./manifest.yml
+         
