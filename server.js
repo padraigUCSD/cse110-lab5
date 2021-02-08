@@ -2,27 +2,13 @@
 const http = require('http')
 const fs = require('fs')
 
+// Create an instance of the http server to handle HTTP requests
 const server = http.createServer((req, res) => {
+  // Set a response type of plain text for the response
   res.writeHead(200, { 'content-type': 'text/html' })
+  // serve index.html
   fs.createReadStream('index.html').pipe(res)
 })
 
-server.listen(process.env.PORT || 3000)
-
- /*
-// Create an instance of the http server to handle HTTP requests
-let app = http.createServer((req, res) => {
-    // Set a response type of plain text for the response
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    
-    // Send back a response and end the connection
-    res.end('Hello World! I am a server.js message\n');
-});
-
-*/
-
-/*
 // Start the server on port 3000
-app.listen(process.env.PORT || 3000);
-console.log('Node server running on port 3000');
-*/
+server.listen(process.env.PORT || 3000)
