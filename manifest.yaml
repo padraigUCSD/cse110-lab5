@@ -2,3 +2,4 @@
 applications:
 - name: cse110-lab5-test
   command: node server.js
+  buildpack: nodejs_buildpack
