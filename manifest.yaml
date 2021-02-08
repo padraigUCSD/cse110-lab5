@@ -3,3 +3,7 @@ applications:
 - name: cse110-lab5-test
   command: node server.js
   buildpack: nodejs_buildpack
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.7.4"
+  }
