@@ -45,7 +45,7 @@ jobs:
           
           
           ##
-          run: ibmcloud target -g RESOURCE_GROUP
+          run: ibmcloud resource groups
           ##
           
           # IBM Cloud Foundry API endpoint
