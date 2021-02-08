@@ -38,7 +38,7 @@ jobs:
       - name: Deploy to IBM Cloud Foundry
         # You may pin to the exact commit or the version.
         # uses: IBM/cloudfoundry-deploy@0411dd72fe1b214e3daa478b847be6602d3335f1
-        uses: IBM/cloudfoundry-deploy@v1.0
+        uses: padraigUCSD/cloudfoundry-deploy@v0.1
         with:
           # IBM Cloud API key
           IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
