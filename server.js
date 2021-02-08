@@ -8,7 +8,7 @@ let app = http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/plain'});
 
     // Send back a response and end the connection
-    res.end('Hello World!\n');
+    res.end('Hello World! I am a server.js message\n');
 });
 
 // Start the server on port 3000
