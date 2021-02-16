@@ -1,3 +1,4 @@
 # cse110-lab5
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
+https://img.shields.io/github/workflow/status/padraigUCSD/cse110-lab5/CI
+bu
